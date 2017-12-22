@@ -1,0 +1,17 @@
+{
+  "name": "ko-unload-check",
+  "version": "0.0.1",
+  "main": "index.js",
+  "author": "Guilherme Waess (guilherme.waess@gmail.com)",
+  "scripts": {
+    "build": "webpack --define WEBPACK_ENV=build",
+    "dev": "webpack --define WEBPACK_ENV=dev --progress --colors --watch"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "babel-preset-env": "^1.6.1",
+    "webpack": "^3.10.0"
+  }
+}
