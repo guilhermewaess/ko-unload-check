@@ -5,13 +5,23 @@
   "author": "Guilherme Waess (guilherme.waess@gmail.com)",
   "scripts": {
     "build": "webpack --define WEBPACK_ENV=build",
-    "dev": "webpack --define WEBPACK_ENV=dev --progress --colors --watch"
+    "dev": "webpack-dev-server --content-base dist/ --define WEBPACK_ENV=dev --progress --colors --watch"
   },
   "license": "MIT",
   "devDependencies": {
     "babel-core": "^6.26.0",
     "babel-loader": "^7.1.2",
+    "babel-plugin-transform-runtime": "^6.23.0",
     "babel-preset-env": "^1.6.1",
-    "webpack": "^3.10.0"
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-stage-2": "^6.24.1",
+    "html-webpack-plugin": "^2.30.1",
+    "webpack": "^3.10.0",
+    "webpack-dev-server": "^2.9.7"
+  },
+  "dependencies": {
+    "async": "^2.6.0",
+    "html-loader": "^0.5.1",
+    "knockout": "^3.4.2"
   }
 }
