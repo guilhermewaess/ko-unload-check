@@ -1,26 +1,28 @@
 export default class {
   constructor(params) {
-    this.subscriptions = [];
-    this.shouldCheck = false;
-    this.subscribeProperties(params.properties);
+    this.startProperties();
+    this.subscribeObservables(params.properties);
     this.subscribeOnUnload();
   }
 
-  subscribeProperties(properties) {
+  startProperties() {
+    this.subscriptions = [];
+    this.shouldCheck = false;
+  }
+
+  subscribeObservables(properties) {
     properties.forEach(this.subscribeProperty.bind(this));
   };
 
   subscribeProperty(property) {
-    property.subscribe(() => {
-      this.shouldCheck = true;
-    });
+    const subscription = property.subscribe(() => { this.shouldCheck = true; });
+    this.subscriptions.push(subscription);
   }
-
 
   subscribeOnUnload() {
     window.onbeforeunload = (e) => {
       if (this.shouldCheck) {
-        return "";
+        return '';
       }
     };
   }
