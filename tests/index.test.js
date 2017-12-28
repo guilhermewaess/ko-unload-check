@@ -14,6 +14,7 @@ describe('index', () => {
   describe('when construct', () => {
     test('should start with shouldCheck false', () => {
       expect(koUnloadCheck.shouldCheck).toEqual(false);
+      expect(koUnloadCheck.shouldCheck).toEqual(false);
     });
     test('should have subscriptions length equal of properties param length', () => {
       expect(koUnloadCheck.subscriptions.length).toEqual(2);
@@ -25,6 +26,7 @@ describe('index', () => {
   describe('When any observable is updated', () => {
     beforeEach(function(){
       observable2('1');
+      
     });
     test('should change shouldCheck to true', () => {
       expect(koUnloadCheck.shouldCheck).toEqual(true);
