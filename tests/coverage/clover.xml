@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1514468997222" clover="3.2.0">
-  <project timestamp="1514468997223" name="All files">
+<coverage generated="1514479139257" clover="3.2.0">
+  <project timestamp="1514479139257" name="All files">
     <metrics statements="11" coveredstatements="11" conditionals="2" coveredconditionals="2" methods="7" coveredmethods="7" elements="20" coveredelements="20" complexity="0" loc="11" ncloc="11" packages="1" files="1" classes="1">
       <file name="index.js" path="C:\Projetos\opensource\ko-unload-check\src\index.js">
         <metrics statements="11" coveredstatements="11" conditionals="2" coveredconditionals="2" methods="7" coveredmethods="7"/>
