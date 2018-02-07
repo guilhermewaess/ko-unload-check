@@ -10,11 +10,64 @@
   <script src="http://cdnjs.cloudflare.com/ajax/libs/knockout/3.4.0/knockout-min.js"></script>
 
   <div id="app">
-    <input type="text" data-bind="value: input">
-    <input type="text" data-bind="value: input2">
-  </div>
+    <div class="main-block">
+      <label for="input1">Change this input</label>
+      <div class="inputs">
+        <input id="input1" type="text" data-bind="value: input">
+      </div>
 
+      <button id="navigate" type="button" data-bind="click: goToGoogle">Try go to Google.com</button>
+    </div>
+  </div>
   <script type="javascript" src="ko-unload-check.js"></script>
 </body>
+
+<style>
+  html,
+  body {
+    width: 100%;
+    height: 100%;
+  }
+
+  #app {
+    height: 100%;
+    width: 300px;
+    text-align: center;
+    margin: auto;
+    margin-top: 17%;
+  }
+
+  .main-block {
+    padding: 20px;
+    background: #F1F1F1;
+    border-width: 0;
+    outline: none;
+    border-radius: 2px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, .6);
+  }
+
+  .inputs {
+    margin-bottom: 10px;
+  }
+
+  #navigate {
+    border-width: 0;
+    outline: none;
+    border-radius: 2px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, .6);
+
+    background-color: #838383;
+    color: #ecf0f1;
+
+    transition: background-color .3s;
+
+    padding: 10px;
+  }
+
+  #navigate:hover,
+  #navigate:focus {
+    background-color: #464646;
+  }
+</style>
 
 </html>

@@ -7,6 +7,10 @@ class vm {
     this.input2 = ko.observable();
     new KoUnloadCheck({ properties: [this.input, this.input2] });
   }
+
+  goToGoogle() {
+    window.location.href = "http://www.google.com.br";
+  }
 };
 
 
