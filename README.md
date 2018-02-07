@@ -26,3 +26,4 @@ You can use with RequireJs as well.
 2. Install dependencies
 3. Run: yarn run dev
 4. Use index.html and indexVM.js to test your changes.
+5. Commit and open a Pull Request :D
